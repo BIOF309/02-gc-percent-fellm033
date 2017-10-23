@@ -1,0 +1,9 @@
+raw = input("Please enter a sequence: ")
+seq = raw.upper()
+seq_len = (len(seq))
+G_count = seq.count("G")
+C_count = seq.count("C")
+G_frac = (G_count/seq_len)*100
+C_frac = (C_count/seq_len)*100
+GC_frac = ((G_count + C_count)/seq_len)*100
+print("The GC content of your sequence is " + str(GC_frac) )
